@@ -24,6 +24,8 @@ name: migration-compat
 # Spec: specs/ci/migration-compat.feature
 
 on:
+  push:
+    branches: [probe-base, probe-fix]
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
