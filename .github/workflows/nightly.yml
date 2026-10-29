@@ -27,6 +27,8 @@ name: nightly
 # Spec: specs/ci/nightly-suite.feature
 
 on:
+  push:
+    branches: [repro-nightly-a, repro-nightly-b]
   schedule:
     - cron: "0 1 * * *"
   workflow_dispatch:
